@@ -1,0 +1,52 @@
+<div class="container extra-width">
+
+    <div class="row">
+        <div class="col-md-12 text-center anp"><h1>Add New Products</h1></div>
+    </div>
+
+    <form [formGroup]="ngForm" (ngSubmit)="AddProduct(ngForm)" autocomplete="off">
+        <div class="row">
+            <div class="col-md-6">Name</div>
+            <div class="col-md-6">
+                <input formControlName="name" type="text" name="name" id="name" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Description</div>
+            <div class="col-md-6">
+                <textarea formControlName="description" type="text" name="description" id="description" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Price</div>
+            <div class="col-md-6">
+                <input type="text" id="price" class="form-control" formControlName="price" name="price">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Company</div>
+            <div class="col-md-6">
+                <input formControlName="company" type="text" name="company" id="company" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Released</div>
+            <div class="col-md-6">
+                <input formControlName="year_released" type="text" name="year_released" id="year_released" class="form-control">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Discontinued</div>
+            <div class="col-md-6">
+                <input type="text" id="discontinued" class="form-control" formControlName="discontinued" name="discontinued">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <input type="submit" name="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </div>
+    </form>
+
+</div>
